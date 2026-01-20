@@ -1,0 +1,29 @@
+keybind = ctrl+s>r=reload_config
+theme = Argonaut
+
+# Cursor config
+cursor-style = block
+shell-integration-features = no-cursor
+cursor-color = "#FFFFFF"
+cursor-opacity = 0.7
+window-height = 72
+window-width = 240
+
+# Shortcuts
+
+# Tabs
+keybind = ctrl+s>t=new_tab
+
+keybind = alt+]=next_tab
+keybind = alt+[=previous_tab
+
+# Splits
+keybind = ctrl+s>j=new_split:down
+keybind = ctrl+s>k=new_split:up
+keybind = ctrl+s>l=new_split:right
+keybind = ctrl+s>h=new_split:left
+
+keybind = alt+j=goto_split:down
+keybind = alt+k=goto_split:up
+keybind = alt+l=goto_split:right
+keybind = alt+h=goto_split:left

@@ -83,6 +83,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 export EDITOR='nvim'
+alias vim='nvim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
@@ -99,7 +100,20 @@ export EDITOR='nvim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias vim="nvim"
+bindkey "^[[1;3D" backward-word
+bindkey "^[[1;3C" forward-word
 
-export NVM_DIR="$HOME/.nvm"
-alias nvm="unalias nvm; [ -s \"$NVM_DIR/nvm.sh\" ] && \. \"$NVM_DIR/nvm.sh\"; [ -s \"$NVM_DIR/bash_completion\" ] && \. \"$NVM_DIR/bash_completion\"; nvm $@"
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+function find_project() {
+	selected=$(find ~/Projects/ -mindepth 1 -maxdepth 1 -type d 2>/dev/null | fzf -i) && zle -I
+	if [[ -n $selected ]]; then
+		cd $selected
+	else
+		cd $PWD
+	fi
+}
+
+zle -N find_project
+bindkey '^f' find_project
