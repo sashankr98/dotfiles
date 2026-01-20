@@ -1,10 +1,13 @@
 keybind = ctrl+s>r=reload_config
 theme = Argonaut
+font-family = MartianMono NFM
+font-size = 14
+window-inherit-font-size = false
 
 # Cursor config
 cursor-style = block
 shell-integration-features = no-cursor
-cursor-color = "#FFFFFF"
+cursor-color = FFFFFF
 cursor-opacity = 0.7
 window-height = 72
 window-width = 240
@@ -27,3 +30,4 @@ keybind = alt+j=goto_split:down
 keybind = alt+k=goto_split:up
 keybind = alt+l=goto_split:right
 keybind = alt+h=goto_split:left
+keybind = alt+enter=toggle_split_zoom
