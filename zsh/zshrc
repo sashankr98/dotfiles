@@ -117,3 +117,6 @@ function find_project() {
 
 zle -N find_project
 bindkey '^f' find_project
+
+
+bindkey '^S' undefined-key

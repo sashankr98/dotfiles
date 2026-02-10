@@ -1,4 +1,4 @@
-keybind = ctrl+s>r=reload_config
+# keybind = ctrl+s>r=reload_config
 theme = Argonaut
 font-family = MartianMono NFM
 font-size = 14
@@ -15,19 +15,19 @@ window-width = 240
 # Shortcuts
 
 # Tabs
-keybind = ctrl+s>t=new_tab
-
-keybind = alt+]=next_tab
-keybind = alt+[=previous_tab
+# keybind = ctrl+s>t=new_tab
+ 
+# keybind = alt+]=next_tab
+# keybind = alt+[=previous_tab
 
 # Splits
-keybind = ctrl+s>j=new_split:down
-keybind = ctrl+s>k=new_split:up
-keybind = ctrl+s>l=new_split:right
-keybind = ctrl+s>h=new_split:left
-
-keybind = alt+j=goto_split:down
-keybind = alt+k=goto_split:up
-keybind = alt+l=goto_split:right
-keybind = alt+h=goto_split:left
-keybind = alt+enter=toggle_split_zoom
+# keybind = ctrl+s>j=new_split:down
+# keybind = ctrl+s>k=new_split:up
+# keybind = ctrl+s>l=new_split:right
+# keybind = ctrl+s>h=new_split:left
+ 
+# keybind = alt+j=goto_split:down
+# keybind = alt+k=goto_split:up
+# keybind = alt+l=goto_split:right
+# keybind = alt+h=goto_split:left
+# keybind = alt+enter=toggle_split_zoom
